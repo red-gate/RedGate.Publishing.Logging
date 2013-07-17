@@ -51,3 +51,53 @@ It has a single method:
 * `void LogException(this ILogger logger, Severity severity, Exception exception)`:
   Log an exception.
 
+`ILogger` has several implementations.
+
+### NullLogger
+
+Does nothing.
+
+### InMemoryLogger
+
+Logs the events to an internal list
+that can be retrieved via the `Events` property.
+
+### LogstashTcpLogger
+
+Logs the events using Logstack over TCP.
+Must be constructed with the hostname and port of the Logstash TCP endpoint.
+
+For instance, if a fragment of your Logstash configuration looks like this:
+
+```
+input {
+    tcp {
+        mode => "server"
+        port => 59000
+        format => "json"
+        # Skipping other options for brevity
+    }
+}
+```
+
+Then you can build a logger like so:
+
+```
+new LogstashTcpLogger(hostname, 59000)
+```
+
+### LoggerWithHttpRequest
+
+Adds HTTP request details to events before logging them with the underlying logger.
+For instance:
+
+```
+// Assuming that request is an instance of HttpRequest
+var logger = new LoggerWithHttpRequest(new InMemoryLogger(), request);
+
+// ...
+
+// This will log the logEvent with its existing key-value pairs
+// as well as the values added by logEvent.WithHttpRequest
+logger.Log(logEvent);
+```
