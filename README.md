@@ -101,3 +101,7 @@ var logger = new LoggerWithHttpRequest(new InMemoryLogger(), request);
 // as well as the values added by logEvent.WithHttpRequest
 logger.Log(logEvent);
 ```
+
+## License
+
+[BSD 2-Clause](http://opensource.org/licenses/BSD-2-Clause)
