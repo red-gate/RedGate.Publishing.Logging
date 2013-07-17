@@ -31,3 +31,23 @@ It has the following methods:
   * `url`
   * `requestHeaders` (excludes the `cookie` header)
 
+## ILogger
+
+Use an `ILogger` to log a `LogEvent` somewhere.
+It has a single method:
+
+* `void Log(LogEvent logEvent)`
+
+`LoggerExtensionMethods` contains extension methods for `ILogger`:
+
+* `void TryWithLoggedExceptions<TException>(
+  this ILogger logger, Action action)
+  where TException : Exception`:
+  Invoke `action`.
+  If it throws an exception of type `TException`,
+  catch and log the exception.
+  The exception is not re-thrown.
+
+* `void LogException(this ILogger logger, Severity severity, Exception exception)`:
+  Log an exception.
+
