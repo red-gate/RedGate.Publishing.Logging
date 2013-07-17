@@ -19,7 +19,7 @@ namespace RedGate.Publishing.Logging
 
         public static void LogException(this ILogger logger, Severity severity, Exception exception)
         {
-            logger.Log(new LogEvent().Severity(Severity.Warning).WithException(exception));
+            logger.Log(new LogEvent().Severity(severity).WithException(exception));
         }
     }
 }
