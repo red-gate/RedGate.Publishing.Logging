@@ -7,6 +7,8 @@
     <owners>Red Gate Software</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Log errors and other messages. Currently supports Logstach over TCP.</description>
+    <licenseUrl>http://opensource.org/licenses/BSD-2-Clause</licenseUrl>
+    <projectUrl>https://github.com/red-gate/RedGate.Publishing.Logging</projectUrl>
   </metadata>
   <files>
     <file src="RedGate.Publishing.Logging.dll" target="lib\net20" />
