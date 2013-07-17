@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>RedGate.Publishing.Logging</id>
+    <version>$version$</version>
+    <authors>Red Gate Publishing</authors>
+    <owners>Red Gate Software</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Log errors and other messages. Currently supports Logstach over TCP.</description>
+  </metadata>
+  <files>
+    <file src="RedGate.Publishing.Logging.dll" target="lib\net20" />
+    <file src="RedGate.Publishing.Logging.pdb" target="lib\net20" />
+  </files>
+</package>

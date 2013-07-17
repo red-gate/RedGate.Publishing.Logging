@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedGate.Publishing.Logging", "RedGate.Publishing.Logging\RedGate.Publishing.Logging.csproj", "{5AECC5EB-FC23-40DE-9959-900CA6F0F43D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{91F827EE-7725-4D22-BFB6-31C0F164F07E}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedGate.Publishing.Logging.Tests", "RedGate.Publishing.Logging.Tests\RedGate.Publishing.Logging.Tests.csproj", "{D3F29F61-1575-44A3-A426-94A24D6EA1FC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5AECC5EB-FC23-40DE-9959-900CA6F0F43D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AECC5EB-FC23-40DE-9959-900CA6F0F43D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AECC5EB-FC23-40DE-9959-900CA6F0F43D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AECC5EB-FC23-40DE-9959-900CA6F0F43D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3F29F61-1575-44A3-A426-94A24D6EA1FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3F29F61-1575-44A3-A426-94A24D6EA1FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3F29F61-1575-44A3-A426-94A24D6EA1FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3F29F61-1575-44A3-A426-94A24D6EA1FC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

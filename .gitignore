@@ -1,0 +1,8 @@
+/.nuget/*.exe
+/RedGate.Publishing.Logging.Tests/bin/
+/RedGate.Publishing.Logging.Tests/obj/
+/RedGate.Publishing.Logging/bin/
+/RedGate.Publishing.Logging/obj/
+/debug.log
+/packages/
+/TestResults/
